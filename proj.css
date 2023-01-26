@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(
+      to bottom,
+      rgba(23, 23, 23, 1) 0%,
+      rgba(23, 23, 23, 0) 100%
+    );
+    z-index: 999;
+  }
+  
+  header::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: background-color 0.3s;
+  }
+  
+  header.sticky::before {
+    background: rgba(23, 23, 23, 0.8);
+  }
+  
+  .navbar {
+    position: relative;
+    padding: 0 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .navbar .logo-wrap {
+    padding: 50px 0;
+    transition: all 0.3s;
+  }
+  
+  header.sticky .navbar .logo-wrap {
+    padding: 20px 0;
+  }
+  
+  .navbar .logo-wrap .logo {
+    display: block;
+    width: 120px;
+    height: 120px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.3s;
+  }
+  
+  header.sticky .navbar .logo-wrap .logo {
+    height: 50px;
+    width: 50px;
+  }
+  
+  .navbar .menu {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar .menu li {
+    list-style: none;
+  }
+  
+  .navbar .menu li a {
+    display: inline-block;
+    color: #ffffff;
+    padding: 20px 25px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1.8px;
+    transition: all 0.3s;
+  }
+  
+  .navbar .menu li a:hover {
+    color: #ff7800;
+  }
+  
+  .navbar .social-links .social-btn {
+    margin-right: 15px;
+    color: #ffffff;
+    font-size: 16px;
+    transition: all 0.3s;
+  }
+  
+  .navbar .social-links .social-btn:hover {
+    color: #ff7800;
+  }
+  
+ 
+  
+  .hero-container::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.25) 90%,
+      rgba(0, 0, 0, 1) 100%
+    );
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+  
+  .hero-container h2 {
+    color: #ffffff;
+    font-size: 120px;
+    font-weight: 900;
+    text-transform: capitalize;
+    text-align: center;
+    z-index: 3;
+  }
+  
+  .content-section {
+    padding: 100px;
+    background-color: #000000;
+  }
+  
+  .content-section p {
+    color: #dedede;
+    font-size: 18px;
+    text-align: justify;
+    text-align-last: center;
+    line-height: 25px;
+  }
+  
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .hero-background {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero-background video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  .hero-background h2 {
+    color: #ffffff;
+    font-size: 150px;
+    font-weight: 800;
+    text-transform: capitalize;
+  }
+  
+  .content {
+    width: 100%;
+    padding: 80px 120px;
+    background-color: #000000;
+  }
+  .grid-container {
+    width: 100%;
+    padding: 80px 120px;
+    background-color: #000000;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 0%;
+    padding: 100px;
+    transform: translate(0, 30px);
+    justify-content: center
+  }
+  
+  .content h2 {
+    margin-bottom: 30px;
+    color: #ffdd00;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+  }
+  
+  .content p {
+    color: #c4c4c4;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: justify;
+    text-align-last: center;
+    line-height: 1.7;
+  }
+  .grid-item {
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align:center;
+    height: 500px;
+    width: 400px;
+    border-radius: 20;
+  }
+  
+  
+  .imgHome {
+    height: 80%;
+    width: 200%;
+    max-width: 350px; 
+  }
+  
+  .paracss{
+    white-space: wrap;
+    color: rgb(0, 0, 0);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:40px;
+  }
+  .grid-item h1 {
+color:#ffffff
+
+  }
+
+  .imgDetails{
+    
+    height: 90%;
+    width: 50%;
+  }
+
+  
