@@ -4,6 +4,14 @@
     box-sizing: border-box;
   }
   
+
+
+
+
+
+
+
+  
   body {
     margin: 0;
     padding: 0;
@@ -63,11 +71,13 @@
     background-position: center;
     background-repeat: no-repeat;
     transition: all 0.3s;
+    cursor: pointer;
   }
   
   header.sticky .navbar .logo-wrap .logo {
     height: 50px;
     width: 50px;
+    cursor: pointer;
   }
   
   .navbar .menu {
@@ -290,3 +300,47 @@ input[type=submit]:hover {
   clear: both;
 }
 
+
+
+
+.search {
+  width: 90%;
+  position:fixed;
+  display: flex;
+}
+
+.searchTerm{
+  width: 100%;
+  border: 3px solid #030303;
+  border-right: none;
+  padding: 5px;
+  height: 35px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #ffdd00;
+}
+
+.searchTerm:focus{
+  color: #000000;
+}
+
+.searchButton {
+  width: 50px;
+  height: 50px;
+  border:transparent;
+  background: #000000;
+  text-align: center;
+  color: #ffdd00;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 15%;
+  position:absolute;
+  top: 40%;
+  left: 21%;
+ transform: translate(-60%, -60%);
+}

@@ -113,7 +113,23 @@ $(document).on("click",function (e) {
   $(".logo").on("click",function(){//returning to the Home page by clicking on the logo.
   var url="/index.html"
     $(location).attr('href',url)
-  })
 
-  
+    
+  })
+var filt =[]
+  $("#Btn").on("click",function(e){
+    filt= filter(meals,function(e,i){
+        var term=$("#searchTerm1").val()
+       return e.meal.toLowerCase()===term.toLowerCase()
+    })
    
+    $("#mls").empty()
+  each(filt,function(e,i){
+  $("#mls").append('<div style="width:1500; margin:0 auto;" class="grid-item">'+//replacing the div with the clicked element
+  '<h1>'+e.meal+'</h1>'+//the meal name "title"
+  '<div><img  src="' + e.imgSrc + '" class="imgDetails"/></div> '+//the targeted meal img.
+  '<div class="content"><p class="paracss">'+e.par+'</p> </div>')
+})
+  
+
+})
