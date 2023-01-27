@@ -21,6 +21,8 @@
      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
      crossorigin="anonymous"
    />
+  
+    <!--stylesheet-->
     <link rel="stylesheet" href="proj.css" />
   </head>
   <body>
@@ -47,18 +49,37 @@
     <section class="hero-background">
         <video autoplay muted loop id="myVideo" class="parallax"><source src="video/Food Background Music For Videos No Copyright.mp4" type="video/mp4">
         </video>
-      <h2>About Rcepie Food</h2>
+      <h2>Contact Rcepie Food</h2>
     </section>
     <div class="content">
-      <h2>About US</h2>
-      <p>We are committed to providing you with the best and most delicious food that you can prepare at home, and invite you to join us on the journey of cooking delicious and healthy meals.</p>
-      <p>Welcome to our website, where we share delicious and easy-to-follow recipes for home cooks. Our team of experienced chefs and food enthusiasts are dedicated to providing you with a wide range of meal ideas, from classic comfort foods to trendy new dishes. Whether you're a beginner in the kitchen or a seasoned pro, we have something for everyone. We understand that cooking can be intimidating or time-consuming, which is why we strive to make our recipes as simple and approachable as possible. We also believe in the power of cooking at home to bring families and friends together. Our recipes are perfect for everything from weeknight dinners to special occasions. We believe in using high-quality ingredients and promoting healthy cooking methods, so you can feel good about the meals you create. We are constantly updating our recipe collection, so be sure to check back frequently for new and delicious ideas. We also offer cooking tips and techniques to help you master the basics and take your cooking to the next level. We are committed to providing you with the best and most delicious food that you can prepare at home, and invite you to join us on the journey of cooking delicious and healthy meals. Thanks for visiting, and happy cooking!</p>
+      <h2>Contact Us</h2>
+      <div class="container">
+        
+        <div class="row">
+          
+          <div class="column">
+            <form action="/action_page.php">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+              </select>
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="any thing need to tell us" style="height:170px"></textarea>
+              <input type="button" value="Submit">
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
     
-   
-          
-    
 
+  
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="proj.js"></script>
   </body>

@@ -83,20 +83,20 @@ each(meals, function (e, i) {
 //function for parallex scrolling
 $(window).on("scroll", function () {
   var parallax = $(".parallax");
-  var scrollPosition = $(this).scrollTop();
+  var scrollPosition = $(this).scrollTop()
   console.log(scrollPosition)
-  parallax.css("transform", "translateY(" + scrollPosition * 0.5 + "px" + ")");
-});
+  parallax.css("transform", "translateY(" + scrollPosition * 0.5 + "px" + ")")
+})
 //function for the sticky bar
 $(document).ready(function () {
   $(window).on("scroll", function () {
     if ($(this).scrollTop() > 80) {
-      $("header").addClass("sticky");
+      $("header").addClass("sticky")
     } else {
-      $("header").removeClass("sticky");
+      $("header").removeClass("sticky")
     }
-  });
-});
+  })
+})
 
 $(document).on("click",function (e) {
   if(e.target.tagName==="IMG") {
