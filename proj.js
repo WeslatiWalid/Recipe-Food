@@ -110,8 +110,9 @@ $(document).on("click",function (e) {
  
 
 
-  $(".logo").on("click",function(){//refreching the page by clicking on the logo.
-    location.reload()
+  $(".logo").on("click",function(){//returning to the Home page by clicking on the logo.
+  var url="/index.html"
+    $(location).attr('href',url)
   })
 
   
